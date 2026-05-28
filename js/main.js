@@ -6,9 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Navbar scroll effect ---- */
   const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
-  });
+  const homeHero = document.querySelector('.home-hero');
+  const updateNavbarState = () => {
+    if (!navbar) return;
+
+    if (!homeHero) {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+      return;
+    }
+
+    const heroBottom = homeHero.offsetTop + homeHero.offsetHeight;
+    const isOverHero = window.scrollY < heroBottom - navbar.offsetHeight;
+
+    navbar.classList.toggle('nav-over-hero', isOverHero);
+    navbar.classList.toggle('scrolled', !isOverHero);
+  };
+
+  updateNavbarState();
+  window.addEventListener('scroll', updateNavbarState, { passive: true });
+  window.addEventListener('resize', updateNavbarState);
 
   /* ---- Mobile hamburger ---- */
   const hamburger = document.getElementById('hamburger');
@@ -32,9 +48,30 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.15 });
 
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.reveal, .reveal-left').forEach(el => revealObserver.observe(el));
+
+  /* ---- Parallax relax image ---- */
+  const relaxImg = document.getElementById('relaxParallax');
+  if (relaxImg) {
+    let parallaxTicking = false;
+    const updateParallax = () => {
+      if (window.innerWidth <= 768) { relaxImg.style.backgroundPositionY = ''; return; }
+      const rect = relaxImg.getBoundingClientRect();
+      const viewH = window.innerHeight;
+      if (rect.bottom < 0 || rect.top > viewH) { parallaxTicking = false; return; }
+      const progress = (viewH - rect.top) / (viewH + rect.height);
+      const offset = ((progress - 0.5) * 80).toFixed(1);
+      relaxImg.style.backgroundPositionY = `calc(50% + ${offset}px)`;
+      parallaxTicking = false;
+    };
+    window.addEventListener('scroll', () => {
+      if (!parallaxTicking) { requestAnimationFrame(updateParallax); parallaxTicking = true; }
+    }, { passive: true });
+    window.addEventListener('resize', updateParallax, { passive: true });
+    updateParallax();
+  }
 
   /* ---- Active nav link ---- */
   const currentPage = location.pathname.split('/').pop() || 'index.html';

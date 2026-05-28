@@ -11,7 +11,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar" id="navbar">
+  <nav class="navbar nav-over-hero" id="navbar">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-logo">
         <img src="./assets/images/logo topspa_oficial.PNG" alt="Top Spa Logo">
@@ -25,7 +25,7 @@
         <a href="#contacto">Contacto</a>
       </div>
       <div class="navbar-actions">
-        <a href="#" class="btn btn-primary" data-wa><i class="bi bi-whatsapp"></i> Reservar</a>
+        <a href="https://wa.me/525643483133" class="btn btn-primary" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Reservar</a>
       </div>
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
@@ -35,13 +35,13 @@
 
   <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
-    <a href="index.html" class="active">Inicio</a>
+   
     <a href="./pages/depilaciones.html">Depilaciones</a>
     <a href="./pages/masajes.html">Masajes</a>
     <a href="./pages/faciales.html">Faciales</a>
     <a href="./pages/corporales.html">Corporales</a>
     <a href="#contacto">Contacto</a>
-    <a href="#" class="btn btn-primary" data-wa><i class="bi bi-whatsapp"></i> Reservar por WhatsApp</a>
+    <a href="https://wa.me/525643483133" class="btn btn-primary" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Reservar por WhatsApp</a>
   </div>
 
   <!-- Hero -->
@@ -50,19 +50,34 @@
     <div class="container home-hero-content">
       <span class="section-label hero-eyebrow">Bienestar & Belleza Premium</span>
       <h1 class="hero-main-title">Top Spa Relax & Beauty</h1>
-      <p class="hero-main-desc">Belleza premium al alcance de todos. Faciales, masajes, depilación láser, corporales, botox y fillers diseñados para ayudarte a sentirte y verte increíble.</p>
+      <p class="hero-main-desc">Belleza premium al alcance de todos. <br> Faciales, masajes, depilación láser, corporales, botox y fillers diseñados para ayudarte a sentirte y verte increíble.</p>
       <div class="cta-btns hero-cta">
         <a href="#contacto" class="btn btn-primary"><i class="bi bi-calendar-check"></i> Reservar cita</a>
         <a href="#servicios" class="btn btn-outline-white">Conocer tratamientos <i class="bi bi-arrow-right"></i></a>
       </div>
+      <!-- Beneficios destacados
       <ul class="hero-benefits">
         <li><i class="bi bi-check-circle-fill"></i> Valoración personalizada</li>
         <li><i class="bi bi-check-circle-fill"></i> Resultados visibles desde las primeras sesiones</li>
         <li><i class="bi bi-check-circle-fill"></i> Protocolos profesionales y atención especializada</li>
       </ul>
       <p class="hero-tagline hero-tagline-light">"Tu momento de relajarte, renovarte y sentirte increíble comienza aquí."</p>
+      -->
     </div>
   </header>
+
+  <!-- Experiencia Top Spa -->
+  <section class="relax-moment-section">
+    <div class="relax-moment-copy">
+      <h2 class="reveal-left">Tu momento de relajarte, renovarte y sentirte increíble comienza aquí.</h2>
+      <ul class="relax-moment-list">
+        <li class="reveal-left reveal-delay-1"><i class="bi bi-check-circle-fill"></i> Valoración personalizada</li>
+        <li class="reveal-left reveal-delay-2"><i class="bi bi-check-circle-fill"></i> Resultados visibles desde las primeras sesiones</li>
+        <li class="reveal-left reveal-delay-3"><i class="bi bi-check-circle-fill"></i> Protocolos profesionales y atención especializada</li>
+      </ul>
+    </div>
+    <div class="relax-moment-image" id="relaxParallax" role="img" aria-label="Sala de espera de Top Spa"></div>
+  </section>
 
   <!-- Servicios más solicitados -->
   <section id="servicios" class="section" style="background:var(--blush-light);">
@@ -74,7 +89,7 @@
       </div>
       <div class="grid-3 reveal reveal-delay-1">
 
-        <!-- Facial Terramar -->
+
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
@@ -95,12 +110,13 @@
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
-              <span class="badge badge-popular"><i class="bi bi-fire"></i> Más popular</span>
+              <span class="badge badge-popular"><i class="bi bi-fire"></i>Favorito Top Spa</span>
             </div>
             <h3 class="card-title">Hollywood Peel</h3>
-            <p class="card-text">Piel opaca o con tono desigual. Láser de carbono que exfolia, unifica el tono y estimula el colágeno — brillo visible desde la primera sesión. Incluye valoración previa.</p>
+            <p class="card-text">Uno de los tratamientos más top de Top Spa. Combina peeling de carbón activo con láser YAG 
+              para ayudar a mejorar la apariencia de la textura, luminosidad y la uniformidad de la piel.</p>
             <div class="card-meta">
-              <span class="price-tag">$2,000</span>
+              <span class="price-tag">Desde $1970</span>
               <span class="duration-tag">50 min</span>
             </div>
             <a href="./pages/faciales.html" class="btn btn-secondary btn-block">Más detalles</a>
@@ -111,45 +127,45 @@
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
-              <span class="badge badge-relax">Para relajación</span>
+              <span class="badge badge-relax">El más popular</span>
             </div>
-            <h3 class="card-title">Masaje Relajante</h3>
-            <p class="card-text">Libera el estrés acumulado con técnicas suaves que armonizan cuerpo y mente. Ideal para quienes pasan horas sentados o frente a pantalla; alivia tensión en espalda y cuello.</p>
+            <h3 class="card-title">Reduce Full</h3>
+            <p class="card-text">Tratamiento corporal de cuerpo completo diseñado para ayudarte a modelar, tonificar y sentirte increíble. 
+              Incluye masaje colombiano manual y aparatología personalizada según tus objetivos.</p>
             <div class="card-meta">
-              <span class="price-tag">$700 - $1,000</span>
-              <span class="duration-tag">50 / 75 min</span>
+              <span class="price-tag">Desde $8, 970</span>
+              <span class="duration-tag">120 min</span>
             </div>
             <a href="./pages/masajes.html" class="btn btn-secondary btn-block">Más detalles</a>
           </div>
         </div>
 
-        <!-- Maderoterapia -->
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
-              <span class="badge badge-body">Moldeamiento corporal</span>
+              <span class="badge badge-body">Belleza premium</span>
             </div>
-            <h3 class="card-title">Maderoterapia</h3>
-            <p class="card-text">Técnica natural que moldea, tonifica y reduce medidas usando instrumentos de madera anatómicamente diseñados. Estimula la circulación y combate la celulitis.</p>
+            <h3 class="card-title">Armonización Facial con Botox y Fillers</h3>
+            <p class="card-text">Tratamiento personalizado realizado por médico estético certificado usando 
+              Botox y fillers de ácido hialurónico para realzar y armonizar tu belleza de forma natural.</p>
             <div class="card-meta">
-              <span class="price-tag">$800</span>
+              <span class="price-tag">Desde $397,000</span>
               <span class="duration-tag">50 min</span>
             </div>
             <a href="./pages/corporales.html" class="btn btn-secondary btn-block">Más detalles</a>
           </div>
         </div>
 
-        <!-- Masaje Colombiano -->
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
-              <span class="badge badge-popular"><i class="bi bi-fire"></i> Más popular</span>
+              <span class="badge badge-popular"><i class="bi bi-fire"></i>Más solicitado</span>
             </div>
-            <h3 class="card-title">Masaje Colombiano</h3>
-            <p class="card-text">Técnica intensiva para moldear la figura, reducir tallas y definir contornos con maniobras vigorosas. Resultados visibles desde las primeras sesiones.</p>
+            <h3 class="card-title">Depilación Láser Diodo</h3>
+            <p class="card-text">Disfruta de una piel más suave y olvídate del rastrillo con tecnología Láser Diodo profesional para rostro y cuerpo, pensada para brindarte comodidad y confianza todos los días.</p>
             <div class="card-meta">
-              <span class="price-tag">$1,200</span>
-              <span class="duration-tag">120 min</span>
+              <span class="price-tag">Desde $9,970</span>
+              <span class="duration-tag">Paq. 10 sesiones</span>
             </div>
             <a href="./pages/corporales.html" class="btn btn-secondary btn-block">Más detalles</a>
           </div>
@@ -159,13 +175,15 @@
         <div class="card">
           <div class="card-body">
             <div class="card-badges">
-              <span class="badge badge-first-time"><i class="bi bi-star"></i> Más solicitado</span>
+              <span class="badge badge-first-time"><i class="bi bi-star"></i>Bye estrés</span>
             </div>
-            <h3 class="card-title">Depilación Zona Chica</h3>
-            <p class="card-text">Olvídate del vello en zonas pequeñas con resultados duraderos. Paquete de 10 sesiones con tecnología IPL/SHR adaptada a tu tipo de piel por especialistas.</p>
+            <h3 class="card-title">Masaje relajante con Aromas</h3>
+            <p class="card-text">Una experiencia de relajación diseñada para desconectarte del estrés diario. 
+              Disponible en experiencia individual o en pareja. Incluye masaje de cuerpo completo, 
+              ritual de aromas florales o cítricos y bebida relajante para consentirte de principio a fin.</p>
             <div class="card-meta">
-              <span class="price-tag">$1,970</span>
-              <span class="duration-tag">10 Sesiones</span>
+              <span class="price-tag">Desde $970</span>
+              <span class="duration-tag">50 - 75 min</span>
             </div>
             <a href="./pages/depilaciones.html" class="btn btn-secondary btn-block">Más detalles</a>
           </div>
@@ -175,11 +193,10 @@
     </div>
   </section>
 
-  <!-- Categorías principales -->
   <section id="categorias" class="section">
     <div class="container">
       <div class="reveal">
-        <h2 class="section-title text-center">Nuestras Categorías</h2>
+        <h2 class="section-title text-center">EXPERIENCIAS TOP DISEÑADAS PARA TI</h2>
         <div class="divider"></div>
       </div>
       <div class="grid-4 reveal reveal-delay-1">
@@ -187,8 +204,8 @@
           <div class="cat-card-bg" style="background:var(--blush);"></div>
           <div class="cat-card-body">
             <div class="cat-card-icon"><i class="bi bi-scissors"></i></div>
-            <h3>Depilaciones</h3>
-            <p>Tecnología IPL/SHR y Diodo para todas las zonas, con paquetes de 10 sesiones.</p>
+            <h3>Depilación Láser</h3>
+            <p>Tecnología Láser Diodo profesional para ayudarte a disminuir el vello de forma progresiva y disfrutar una piel más suave y cómoda todos los días.</p>
             <span class="cat-card-link">Ver más <i class="bi bi-arrow-right"></i></span>
           </div>
         </a>
@@ -197,7 +214,8 @@
           <div class="cat-card-body">
             <div class="cat-card-icon"><i class="bi bi-hand-index-thumb"></i></div>
             <h3>Masajes</h3>
-            <p>Relajantes, descontracturantes y terapéuticos para descanso profundo y bienestar total.</p>
+            <p>Experiencias relajantes, descontracturantes y terapéuticas diseñadas para ayudarte a desconectarte del estrés y 
+              regalarte un momento de bienestar profundo.</p>
             <span class="cat-card-link">Ver más <i class="bi bi-arrow-right"></i></span>
           </div>
         </a>
@@ -206,7 +224,7 @@
           <div class="cat-card-body">
             <div class="cat-card-icon"><i class="bi bi-stars"></i></div>
             <h3>Faciales</h3>
-            <p>Desde básicos hasta tratamientos avanzados como HIFU, Dermapen y Hollywood Peel.</p>
+            <p>Faciales diseñados para mejorar la luminosidad, textura y bienestar de tu piel mediante protocolos personalizados y tratamientos premium avanzados.</p>
             <span class="cat-card-link">Ver más <i class="bi bi-arrow-right"></i></span>
           </div>
         </a>
@@ -215,7 +233,7 @@
           <div class="cat-card-body">
             <div class="cat-card-icon"><i class="bi bi-person-check"></i></div>
             <h3>Corporales</h3>
-            <p>Body contour, maderoterapia, anticelulitis y presoterapia para moldear tu cuerpo.</p>
+            <p>Técnicas corporales de triple acción enfocadas en ayudar a reducir, modelar y tonificar mediante protocolos personalizados y aparatología especializada.</p>
             <span class="cat-card-link">Ver más <i class="bi bi-arrow-right"></i></span>
           </div>
         </a>
@@ -227,29 +245,29 @@
   <section class="section" style="background:var(--blush-light);">
     <div class="container">
       <div class="reveal text-center">
-        <h2 class="section-title text-center">Por qué elegir Top Spa</h2>
+        <h2 class="section-title text-center">¿Por qué elegir Top Spa?</h2>
         <div class="divider"></div>
       </div>
       <div class="grid-4 reveal reveal-delay-2" style="margin-top:40px;">
         <div class="why-card">
           <div class="why-icon"><i class="bi bi-gem"></i></div>
-          <h4>Experiencias completas</h4>
-          <p>Combinamos técnicas profesionales, productos de calidad y un ambiente diseñado para relajarte.</p>
+          <h4>Experiencia premium</h4>
+          <p>Combinamos bienestar, tecnología y atención personalizada para brindarte una experiencia premium de lujo accesible diseñada para consentirte de principio a fin.</p>
         </div>
         <div class="why-card">
           <div class="why-icon"><i class="bi bi-graph-up-arrow"></i></div>
-          <h4>Resultados visibles</h4>
-          <p>Tratamientos faciales y corporales pensados para mejorar textura, luminosidad y contorno.</p>
+          <h4>Profesional médico certificado</h4>
+          <p>Medicina estética realizada por la Dr. Irish Díaz Pérez, médico cirujano con cédula profesional 10317769 y maestría en medicina regenerativa, antienvegecimiento y estética con cédula 12875863.</p>
         </div>
         <div class="why-card">
           <div class="why-icon"><i class="bi bi-cpu"></i></div>
-          <h4>Tecnología profesional</h4>
-          <p>Depilación con IPL/SHR y Diodo, aparatología corporal y medicina estética aplicada por especialistas.</p>
+          <h4>Personal capacitado y certificado</h4>
+          <p>Contamos con personal capacitado  y tratamientos realizados bajo protocolos profesionales y regulación sanitaria correspondiente enfocados en seguridad, bienestar y atención personalizada.</p>
         </div>
         <div class="why-card">
           <div class="why-icon"><i class="bi bi-calendar-check"></i></div>
-          <h4>Fácil de agendar</h4>
-          <p>Reserva por WhatsApp, teléfono o mensaje, con opciones de horarios flexibles para ti.</p>
+          <h4>Tecnología especializada</h4>
+          <p>Trabajamos con aparatología profesional, química cosmética facial y protocolos personalizados para tratamientos faciales, corporales y depilación láser.</p>
         </div>
       </div>
     </div>
@@ -258,19 +276,22 @@
   <!-- Higiene y Seguridad -->
   <section class="hygiene-section">
     <div class="container">
-      <h2>Tu seguridad, nuestra prioridad</h2>
+      <h2>Tu bienestar en manos profesionales</h2>
       <div class="hygiene-grid reveal">
         <div class="hygiene-item">
           <i class="bi bi-shield-check"></i>
-          <p>Materiales desechables en cada sesión</p>
+          <p>Limpieza y desinfección profesional</p>
+          <p>Cabinas, herramientas y espacios sanitizados cuidadosamente en cada sesión para tu tranquilidad.</p>
         </div>
         <div class="hygiene-item">
           <i class="bi bi-droplet"></i>
-          <p>Productos certificados y dermatológicamente probados</p>
+          <p>Dermocosmética consciente y profesional</p>
+          <p>Productos dermocosméticos cruelty free, libres de parabeno y sulfatos para cuidar tu piel.</p>
         </div>
         <div class="hygiene-item">
           <i class="bi bi-person-badge"></i>
-          <p>Especialistas certificadas en cada tratamiento</p>
+          <p>Especialistas capacitadas y certificadas</p>
+          <p>Atención profesional y personalizada para brindarte una experiencia cómoda, segura y enfocada en tu bienestar.</p>
         </div>
       </div>
     </div>
@@ -330,74 +351,64 @@
 
   <!-- CTA + Contacto -->
   <section class="cta-section" id="contacto">
-    <div class="container reveal">
-      <h2>Agenda tu cita ahora</h2>
-      <p>Completa el formulario y te contactamos por WhatsApp, o escríbenos directamente.</p>
-      <form id="booking-form" class="booking-form" novalidate>
-        <div class="form-group">
-          <input id="booking-name" type="text" placeholder="Tu nombre" required autocomplete="name">
-        </div>
-        <div class="form-group">
-          <select id="booking-service" required>
-            <option value="" disabled selected>Servicio de interés</option>
-            <option>Depilaciones</option>
-            <option>Masajes</option>
-            <option>Faciales</option>
-            <option>Corporales</option>
-            <option>No lo sé aún, quiero asesoría</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input id="booking-date" type="date" required>
-        </div>
-        <div class="form-group">
-          <input id="booking-phone" type="tel" placeholder="Tu número de WhatsApp" required autocomplete="tel">
-        </div>
-        <button type="submit" class="btn"><i class="bi bi-whatsapp"></i> Enviar por WhatsApp</button>
-      </form>
-      <p class="cta-alt">O escríbenos directo: <a href="#" data-wa class="cta-wa-link"><i class="bi bi-whatsapp"></i> +52 55 0000 0000</a></p>
+    <div class="container cta-inner reveal">
+      <div class="cta-form-col">
+        <h3>Reserva tu experiencia Top Spa</h3>
+        <p>Elige tu tratamiento, agenda tu horario y déjanos consentirte.<br>Escríbenos por WhatsApp para ayudarte a elegir la mejor experiencia para ti.</p>
+        <form id="booking-form" class="booking-form" novalidate>
+          <div class="form-group">
+            <select id="booking-service" required>
+              <option value="" disabled selected>Selecciona tu experiencia</option>
+              <option value="Depilación">Depilación Laser / IPL</option>
+              <option value="Masaje">Masajes Relajantes o Terapéuticos</option>
+              <option value="Facial">Faciales (Skin Care, Glow Gold, etc)</option>
+              <option value="Corporal">Tratamientos Corporales</option>
+              <option value="Medicina Estética">Medicina Estética (Botox, Fillers)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="bi bi-whatsapp"></i> Agendar por WhatsApp
+          </button>
+        </form>
+      </div>
+      <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.225739943034!2d-99.13642932443828!3d19.359375824425396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0eb930db8f%3A0x3ca7e302f51f64d7!2sTop%20Spa%20Relax%20%26%20Beauty!5e0!3m2!1ses-419!2smx!4v1780007258891!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="footer-inner three-col">
       <div class="footer-brand">
-        
-        <p>Experiencias de spa, faciales y corporales para renovar tu piel y tu mente.</p>
-        <span class="footer-tagline">Elige tu momento de bienestar</span>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <img src="./assets/images/logo topspa_oficial.PNG" alt="Top Spa Logo">
+        <p>Belleza premium y bienestar diseñado para ayudarte a sentirte y verte increíble.</p>
+        <p>Faciales, masajes, corporales, depilación láser y medicina estética en un espacio pensado para consentirte.</p>
+        <p class="footer-tagline">Elige tu momento de bienestar.</p>
+        <div class="footer-contact-item">
+          <a href="https://linktr.ee/topsparelaxbeauty" target="_blank" rel="noopener" aria-label="Linktree"><i class="bi bi-link-45deg"></i></a>
+          <a href="https://www.instagram.com/topsparelaxbeauty/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/TopSpaRelaxBeauty/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.tiktok.com/@topspa_cdmx" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
         </div>
       </div>
-      <div>
-        <h5>Servicios</h5>
+      <div class="footer-col experiences">
+        <h5>EXPERIENCIAS</h5>
         <ul>
-          <li><a href="./pages/depilaciones.html">Depilaciones</a></li>
-          <li><a href="./pages/masajes.html">Masajes</a></li>
           <li><a href="./pages/faciales.html">Faciales</a></li>
+          <li><a href="./pages/masajes.html">Masajes</a></li>
           <li><a href="./pages/corporales.html">Corporales</a></li>
+          <li><a href="./pages/depilaciones.html">Depilación Láser</a></li>
+          <li><a href="./pages/corporales.html">Medicina Estética</a></li>
         </ul>
       </div>
-      <div>
-        <h5>Contacto</h5>
-        <div class="footer-contact-item">
-          <i class="bi bi-geo-alt"></i>
-          <span>Dirección de Top Spa Relax & Beauty</span>
-        </div>
-        <div class="footer-contact-item">
-          <i class="bi bi-whatsapp"></i>
-          <span>WhatsApp: +52 55 0000 0000</span>
-        </div>
-        <div class="footer-contact-item">
-          <i class="bi bi-clock"></i>
-          <span>Lunes a Sábado: 10:00 - 19:00</span>
-        </div>
-        <div class="footer-contact-item footer-privacy">
-          <i class="bi bi-file-text"></i>
-          <a href="#">Aviso de privacidad</a>
-        </div>
+      <div class="footer-col contact">
+        <h5>CONTACTO</h5>
+        <div class="footer-contact-item"><i class="bi bi-geo-alt"></i><span>Andrómeda No. 1, Local 2. Col. El Prado, Alcaldía Iztapalapa 09480, CDMX</span></div>
+        <div class="footer-contact-item"><i class="bi bi-whatsapp"></i><span>WhatsApp: 56 4348 3133</span></div>
+        <div class="footer-contact-item"><i class="bi bi-clock"></i><span>Lunes a sábado · 9:00 am — 8:00 pm<br>Domingos 9:00 am - 3:00 pm</span></div>
+        <div class="footer-contact-item"><i class="bi bi-envelope"></i><a href="mailto:hola@topspa.mx">hola@topspa.mx</a></div>
+        <div class="footer-contact-item footer-privacy"><i class="bi bi-file-text"></i><a href="#">Aviso de privacidad</a></div>
+        <div style="margin-top:8px;"><a href="https://mxfwa1.flowww.net/887761/1/details" target="_blank" rel="noopener">Agenda online</a></div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -406,7 +417,7 @@
   </footer>
 
   <!-- WhatsApp Float -->
-  <a href="#" class="wa-float" data-wa title="Reserva por WhatsApp">
+  <a href="https://wa.me/525643483133" class="wa-float" data-wa title="Reserva por WhatsApp" target="_blank" rel="noopener">
     <i class="bi bi-whatsapp" style="font-size:1.7rem; color:white;"></i>
   </a>
 
