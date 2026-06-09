@@ -737,7 +737,7 @@ p { font-size: 0.97rem; line-height: 1.8; }
 .relax-moment-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  min-height: 400px;
+  min-height: 550px;
   background: var(--white);
 }
 .relax-moment-copy {
@@ -774,12 +774,16 @@ p { font-size: 0.97rem; line-height: 1.8; }
   margin-top: 4px;
 }
 .relax-moment-image {
-  min-height: 400px;
-  background-image: url('../assets/images/recepcion_1.jpeg');
-  background-size: cover;
-  background-position: center 50%;
-  background-repeat: no-repeat;
+  min-height: 550px;
   will-change: background-position-y;
+}
+
+.relax-moment-image img{
+  min-height: 550px;
+  /* max-height: 100%; */
+  width: 100%;
+  vertical-align: center;
+  object-fit:cover;
 }
 
 /* ---------- Reveal left (slide from left) ---------- */
