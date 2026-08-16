@@ -83,6 +83,19 @@ p { font-size: 0.97rem; line-height: 1.8; }
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(168,105,157,0.35);
 }
+.btn-reserva {
+  padding: 16px 30px;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 18px rgba(168,105,157,0.28);
+  animation: reserva-pulse 2.4s ease-in-out infinite;
+}
+.btn-reserva:hover { animation: none; }
+@keyframes reserva-pulse {
+  50% { box-shadow: 0 8px 26px rgba(168,105,157,0.48); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-reserva { animation: none; }
+}
 .btn-secondary {
   background: transparent;
   color: var(--charcoal);
@@ -214,7 +227,7 @@ p { font-size: 0.97rem; line-height: 1.8; }
   display: flex; align-items: center; gap: 12px;
   flex-shrink: 0;
 }
-.navbar-logo img { height: 50px; width: auto; }
+.navbar-logo img { height: 70px; width: auto; }
 .navbar-logo-text {
   display: flex; flex-direction: column; line-height: 1.1;
 }
@@ -662,11 +675,12 @@ p { font-size: 0.97rem; line-height: 1.8; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(25,8,18,0.72) 0%,
-    rgba(80,25,65,0.55) 55%,
-    rgba(18,4,12,0.68) 100%
+    115deg,
+    rgba(38, 22, 33, 0.42) 0%,
+    rgba(108, 62, 96, 0.20) 42%,
+    rgba(18, 4, 12, 0.18) 100%
   );
+  pointer-events: none;
 }
 @keyframes heroBgZoom {
   from { transform: scale(1.09); }
